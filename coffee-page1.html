@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lala's Coffee Shop</title>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/EZstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumb.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/rolloverZoom.css">
+	<link rel="stylesheet" type="text/css" href="css/zoomID.css">
+	<link rel="stylesheet" type="text/css" href="css/popUpHelpOnHover.css">
+	<link rel="stylesheet" type="text/css" href="css/ezaccordion-plugin.css">
+	<!-- JAVASCRIPT LINKS -->
+	
+	   <ul id="breadcrumbs">
+      <li>
+        <a href="#" class="odd">You are Here:<span class="arrow"></span></a>
+      </li>
+   
+      <li class="active">
+        &nbsp;&nbsp;Home
+      </li>
+    </ul>
+	
+	
+	<script src="https://use.fontawesome.com/b451a1c7e2.js"></script>
+<style>
+    body { background-image: url(images/pattern4jpg.jpg); 
+           color: whitesmoke; }
+    #accordion section.collapsible{background-color: bisque; }  
+    .nav-menu ul {background-color: bisque; 
+                    color: black; }
+    .nav-menu .active {background-color: burlywood; }
+    .nav-menu li a, .nav-menu a {color: black; }
+    .ez-table-striped-th-col {background-color: bisque;
+                                color: black; } 
+    .ez-table-striped-row:nth-child(odd) {background-color: burlywood;}
+    .zoomBtn {    background-color: burlywood;}
+   
+    #breadcrumbs li:first-of-type a{background-color:brown; }
+    
+    
+    </style>
+</head>
+<body>
+         <nav class="nav-menu" id="nav-component">
+        <ul>
+          <li><a href="coffee-page1.html">Home</a></li>
+            <li class="dropdown-menu">
+            <a href="coffee-page2.html" class="dropbtn">Cakes</a>
+            <div class="dropdown-content">
+              <a href="coffee-order.html">Order</a>
+              <a href="coffee-gallery.html">Gallery</a>
+             </div>
+          </li>
+          <li><a href="coffee-story.html">Our Strory</a></li>
+     <a href="#" class="menu-icon">&#9776;</a>
+        </ul>
+    </nav>
+      
+       <div class="col col-12-12">
+      <div class=carousel>
+  <ul class=panes>
+    <li><img src="images/coffee.jpg" alt="" ></li>
+    <li><img src="images/2.jpg" alt=""></li>
+    <li><img src="images/coffee.jpg" alt=""></li>
+     <li><img src="images/2.jpg" alt=""></li>
+      <li><img src="images/coffee.jpg" alt=""></li>
+
+   
+      </ul>
+</div>
+    </div>
+      
+      
+    <div class="col col-12-12">
+       	<a class="zoomBtn plus"> + </a> 
+	 &nbsp;
+	<a class="zoomBtn"> - </a> 
+	<div id="zoomThis">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur commodo ex vitae purus venenatis, ac rutrum velit sollicitudin. Vivamus pretium vel neque at rhoncus.</p>
+         <p>Mauris vehicula, turpis eget lacinia molestie, nisl erat sagittis nunc, vitae gravida lectus ligula et ex. Pellentesque id facilisis urna. Pellentesque gravida justo eget ullamcorper mollis.</p>
+         <p> Mauris in ornare nibh, non fringilla diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras fermentum odio nisl, quis dapibus justo ullamcorper ut.</p>
+    </div>  
+    </div>
+     
+     
+     
+     
+     
+      <section class="col col-12-12">
+           <table class='ez-table-striped'>
+       <caption>Our Locations</caption>
+       <thead>
+           <tr class='ez-table-striped-th-col'>
+               <th scope='col' class='ez-table-striped-td'>San Diego, Ca</th>
+               <th scope='col'class='ez-table-striped-td'>12345 Main Street</th>
+        
+         </tr>
+       </thead>
+       <tbody>
+          <tr class='ez-table-striped-row'>
+              <th scope='row' class='ez-table-striped-th'>Orange County</th>
+              <td class='ez-table-striped-td'>678 Local Street</td>
+              
+          </tr>
+          <tr>
+              <th scope='row' class='ez-table-striped-th'>San Francicso</th>
+              <td class='ez-table-striped-td'>555 1st avenue</td>
+            
+          </tr>
+          <tr class='ez-table-striped-row'>
+              <th scope='row' class='ez-table-striped-th'>San Francicso</th>
+              <td class='ez-table-striped-td'>123 Color Avenue</td>
+            
+          </tr>
+        
+       </tbody>
+   </table>
+	  </section>
+      
+      
+       
+	
+	<!-- END OF BORDERED TABLE -->
+	
+<hr>      
+<footer style="background-color:bisque;">
+<h4 class="text-center">12345 San Diego, Ca 92101</h4>
+</footer>
+
+<!-- JQUERY CODE/LINKS -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/zoomID.js"></script>
+	<script type="text/javascript" src="js/popUpHelpOnHover.js"></script>
+	<script type="text/javascript" src="js/navBar.js"></script>
+    	<script src="js/ezaccordion-plugin.js"></script>
+	<script src="js/stickyNav.js"></script>
+   
+    <!-- SCRIPT TO INITIALIZE ACCORDION PLUGIN -->
+    <script>
+        $(function () {
+            $("#accordion").accordionPlugin();
+        })
+    </script>
+    <!-- END SCRIPT TO INITIALIZE ACCORDION PLUGIN -->
+</body>
+</html>

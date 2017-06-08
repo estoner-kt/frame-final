@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EZability</title>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/EZstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/breadcrumb.css">
+	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/rolloverZoom.css">
+	<link rel="stylesheet" type="text/css" href="css/zoomID.css">
+	<link rel="stylesheet" type="text/css" href="css/popUpHelpOnHover.css">
+	<link rel="stylesheet" type="text/css" href="css/ezaccordion-plugin.css">
+	<!-- JAVASCRIPT LINKS -->
+	<script src="https://use.fontawesome.com/b451a1c7e2.js"></script>
+<style>
+    body { background-image: url(images/pattern4jpg.jpg); 
+           color: whitesmoke; }
+    #accordion section.collapsible{background-color: bisque; }  
+    .nav-menu ul {background-color: bisque; 
+                    color: black; }
+    .nav-menu .active {background-color: burlywood; }
+    .nav-menu li a, .nav-menu a {color: black; }
+    .ez-table-striped-th-col {background-color: bisque;
+                                color: black; } 
+    .ez-table-striped-row:nth-child(odd) {background-color: burlywood;}
+    .ez-form label {color: black; font-weight: 600; }
+    .ez-form input[type='submit'] {
+    background-color: burlywood;
+    color: #fff;
+        height: 50px;}
+    .ez-form input[type='submit']:hover {
+    background: #965637;  ;
+    color: #000;
+    
+    
+    </style>
+</head>
+<body>
+            <nav class="nav-menu" id="nav-component">
+        <ul>
+          <li><a href="coffee-page1.html">Home</a></li>
+            <li class="dropdown-menu">
+            <a href="coffee-page2.html" class="dropbtn">Cakes</a>
+            <div class="dropdown-content">
+              <a href="coffee-order.html">Order</a>
+              <a href="coffee-gallery.html">Gallery</a>
+             </div>
+          </li>
+          <li><a href="coffee-story.html">Our Strory</a></li>
+     <a href="#" class="menu-icon">&#9776;</a>
+        </ul>
+    </nav>
+      
+       <div class="col col-12-12">
+      <div class=carousel>
+  <ul class=panes>
+    <li><img src="images/coffee.jpg" alt="" ></li>
+    <li><img src="images/2.jpg" alt=""></li>
+    <li><img src="images/coffee.jpg" alt=""></li>
+     <li><img src="images/2.jpg" alt=""></li>
+      <li><img src="images/coffee.jpg" alt=""></li>
+
+   
+      </ul>
+</div>
+    </div>
+ <h1>Order Form:</h1>
+	<!-- START OF FORM -->
+	<form class="group ez-form">  
+       
+        <div class='ez-form-info'>Required fileds are marked with an asterisk (*)</div>  
+        <fieldset>
+                <legend>Personal Information</legend>
+                  <label for='firstName'>First Name <span class='ez-form-span-mobile'>*</span><span class='ez-form-span-desktop'>(Required)</span> </label>
+                  <input type='text' name='firstName' placeholder='John'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='lastName'>Last Name <span class='ez-form-span-mobile'>*</span><span class='ez-form-span-desktop'>Required)</span></label>
+                  <input type='text' name='lastName' placeholder='Doe'>
+        </fieldset>
+        <fieldset>
+               <legend>Contact Information</legend>
+                  <label for='email'>Email <span class='ez-form-span-mobile'>*</span> <span class='ez-form-span-desktop'>(Required)</span> </label>
+                  <input type='text' name='email' placeholder='johnDoe@gmail.com'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='telephone'>Telephone </label>
+                  <input type='text' name='telephone' placeholder='555.554.6786'>
+                  <div class='ez-form-clear'></div>
+
+                  <label for='contact'>Prefered Contact</label>
+                  <input type='radio' name='contact' value='email'>Email
+                  <input type='radio' name='contact' value='phone'>Phone
+                  <div class='ez-form-clear'></div>
+
+            
+        </fieldset>
+        <fieldset>
+                <legend>Other Information</legend> 
+                 <label for=interest>I am interested in </label>
+                      <input type='checkbox' name='interest'>Cakes
+                      <input type='checkbox' name='interest'>Coffee
+                
+                  <div class='ez-form-clear'></div>
+                  <label for='comments'>Comments</label>
+                  <textarea placeholder='Thank you for visiting our site'></textarea>
+                  <input type='submit' value='Submit'>
+        </fieldset>
+    </form>
+      
+     
+ 
+    
+    <br>
+     
+
+    
+     
+
+	
+	
+<hr>      
+<footer style="background-color:#dedede"><h4>Footer</h4>
+</footer>
+
+<!-- JQUERY CODE/LINKS -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/zoomID.js"></script>
+	<script type="text/javascript" src="js/popUpHelpOnHover.js"></script>
+	<script type="text/javascript" src="js/navBar.js"></script>
+    	<script src="js/ezaccordion-plugin.js"></script>
+	<script src="js/stickyNav.js"></script>
+   
+    <!-- SCRIPT TO INITIALIZE ACCORDION PLUGIN -->
+    <script>
+        $(function () {
+            $("#accordion").accordionPlugin();
+        })
+    </script>
+    <!-- END SCRIPT TO INITIALIZE ACCORDION PLUGIN -->
+</body>
+</html>
